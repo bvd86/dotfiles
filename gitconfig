@@ -51,4 +51,9 @@
   rebase = false
 [user]
 	email = bvd86@icloud.com
-	name = Billy Veillette-Daigle
+	name = Billy Veillette Daigle
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
